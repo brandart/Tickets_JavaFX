@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.Statistik">
+   <children>
+      <DatePicker fx:id="fromDate" layoutX="14.0" layoutY="23.0" />
+      <DatePicker fx:id="toDate" layoutX="199.0" layoutY="23.0" />
+      <Button layoutX="383.0" layoutY="23.0" mnemonicParsing="false" onAction="#calculate" text="Berechnen" />
+      <PieChart fx:id="ticketChart" layoutX="23.0" layoutY="55.0" prefHeight="314.0" prefWidth="547.0" />
+   </children>
+</AnchorPane>

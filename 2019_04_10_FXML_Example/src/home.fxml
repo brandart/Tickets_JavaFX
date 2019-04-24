@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.Home">
+  <tabs>
+    <Tab fx:id="homeTab" text="Home">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Label layoutX="95.0" layoutY="47.0" prefHeight="72.0" prefWidth="133.0" text="Willkommen!!" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab fx:id="verwalten" onSelectionChanged="#verwaltenTab" text="Verwalten">
+      <content>
+        <AnchorPane fx:id="verwaltenAnchorPane" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+      </content>
+    </Tab>
+      <Tab fx:id="erstellenTab" onSelectionChanged="#erstellenTabChanged" text="Ticketerstellen">
+        <content>
+          <AnchorPane fx:id="erstellenAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+      <Tab fx:id="statistikTab" onSelectionChanged="#statistikTabChanged" text="Statistik">
+        <content>
+          <AnchorPane fx:id="statistikAnchor" minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+        </content>
+      </Tab>
+  </tabs>
+</TabPane>

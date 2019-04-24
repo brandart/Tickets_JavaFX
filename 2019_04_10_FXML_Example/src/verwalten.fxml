@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="code.Verwalten">
+   <children>
+      <TableView fx:id="ticketList" editable="true" layoutX="14.0" layoutY="43.0" prefHeight="309.0" prefWidth="569.0">
+         <columns>
+            <TableColumn fx:id="c1" editable="false" prefWidth="75.0" text="ID" />
+            <TableColumn fx:id="c2" prefWidth="138.0" sortable="false" text="Description" />
+            <TableColumn fx:id="c3" minWidth="0.0" prefWidth="131.0" text="created At" />
+            <TableColumn fx:id="c4" prefWidth="75.0" text="User" />
+         </columns>
+      </TableView>
+      <DatePicker fx:id="toDate" layoutX="196.0" layoutY="12.0" />
+      <DatePicker fx:id="fromDate" layoutX="14.0" layoutY="12.0" />
+      <Button fx:id="myButton" layoutX="381.0" layoutY="12.0" mnemonicParsing="false" onAction="#buttonListener" text="Button" />
+   </children>
+</AnchorPane>
